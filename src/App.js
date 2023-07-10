@@ -9,7 +9,8 @@ import {
   FaCheck,
   FaUndo,
 } from "react-icons/fa";
-const _SERVER_LINK = process.env.REACT_APP_SERVER_LINK;
+// const _SERVER_LINK = process.env.REACT_APP_SERVER_LINK;
+const _SERVER_LINK = "https://csun-task-force-back-bd0556c9f593.herokuapp.com";
 
 /*
 eduard.hovhannisyan.461@my.csun.edu
