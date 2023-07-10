@@ -1,38 +1,252 @@
+* {
+  border-radius: 3px;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+body {
+  background-color: #212121;
+}
+
+div {
+  border-radius: 10px;
+}
+
 .App {
-  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container_with_text_icon {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  transition: all 0.2s ease-in;
+  border: 3px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.container_with_text_icon:hover {
+  color: #212121;
+  background-color: white;
+  border: 3px solid #212121;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #212121;
+}
+
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #212121;
+}
+
+.navbar_container {
+  padding: 10px;
+  border: 3px solid white;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* text-align: center; */
+}
+
+.navbar_container_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_container_logo > img {
+  width: 50px;
+  height: 50px;
+}
+
+.sign_in_sign_up_container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: darkgrey;
+  align-items: center;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+.sign_in_sign_up_container_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0.3;
+}
+
+.user_dashboard_container {
+  margin-top: 10px;
+  border: 3px solid white;
+  padding: 10px;
+  background-color: darkgrey;
+}
+
+.user_dashboard_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkgrey;
+  margin-bottom: 15px;
+}
+
+.user_dashboard_navbar > h2 {
+  margin: 0;
+}
+
+.user_dashboard_navbar > button {
+  transition: all 0.2s ease-in-out;
+  border: 3px solid white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.user_dashboard_navbar > button:hover {
+  color: #212121;
+  background-color: white;
+  border: 3px solid #212121;
+}
+
+.user_dashboard_tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  border: 3px solid white;
+  background-color: #212121;
+}
+
+.user_dashboard_add_category {
+  border: 3px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  gap: 5px;
+  width: 30%;
+}
+
+.user_dashboard_add_task {
+  border: 3px solid white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgrey;
+  gap: 5px;
+  width: 40%;
+}
+
+.user_dashboard_tasks_container {
+  padding: 5px;
+  border: 3px solid white;
+  background-color: #212121;
+  margin-top: 10px;
+}
+
+.user_dashboard_tasks_categories {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user_dashboard_tasks_categories > button {
+  transition: all 0.2s ease-in;
+  border: 3px solid darkgrey;
+  font-size: 20px;
+}
+
+.user_dashboard_tasks_categories > button:hover {
+  border: 3px solid #212121;
+}
+
+.logo_span {
+  padding: 2px;
+  height: 20px;
+  transition: all 0.2s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_span:hover {
+  color: red;
+}
+
+.task_category_general_button {
+  border-radius: 5px;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.task_category_selected {
+  border-radius: 5px;
+  background-color: darkgrey;
+  color: #212121;
+  border: 3px solid #212121;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user_dashboard_tasks_view {
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.multiline {
+  white-space: pre-wrap;
+}
+
+.user_dashboard_tasks_view_task {
+  padding: 5px 20px;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+.user_dashboard_tasks_view_task_left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user_dashboard_tasks_view_task_right {
+  display: flex;
+  gap: 10px;
+}
+
+.user_dashboard_tasks_view_task_completed_container {
+  padding: 5px 20px;
+  border: 3px solid whiteue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #454545;
+}
+
+.user_dashboard_tasks_view_task_completed {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: line-through;
+}
+
+.user_dashboard_tasks_view_task_completed_buttons {
+  display: flex;
+  gap: 10px;
 }
